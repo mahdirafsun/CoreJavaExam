@@ -1,35 +1,102 @@
 Core Java Definition:
 
 What is jdk ?
-Answer:
+Answer: is an implementation of either one of the Java SE, Java EE or Java ME platforms released by Oracle Corporation
+ in the form of a binary product aimed at Java developers on Solaris, Linux, Mac OS X or Windows.
 
 What jdk contains or composed of or components comes with and define each components?
-Answer:
+Answer:java development kit
 
 What is IDE?
+Integrated development environment is a software application that provides utilities to computer programmers 
+for software development
 What are the IDEs available in the market to support java?
+Eclipse, visual studio
 Explain the entire java life cycle.
+Editor-> Source code-> Java Compiler ->Byte code -> Java virtual Machine
 what is class?
+A class is a blueprint in which individual object are created
+A class describes an object state and behavior 
 What is object?
+Object is a representation of real world things.
+Object is characterized as something that have state and behavior 
 What is the entry point of an application?
+main
 Why main is static?
+To avoid creating a new instance of that class
 What is the difference between an Interface and Abstract class?
+An abstract class can have both abstract and non-abstract method, while an interface must only have abstract method
+any class that implement an interface must implements all of the method provided by the interface
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+NO. YOU IMPLEMENT AN interface and extends from an abstract class
 what is Access Specifier?
+An access  specifier is simply the way a variable, method, or class may be accessed 
 What is OOP ? Define each feature of java OOP.
+Object oriented programming
+Abstraction
+Encapsualtion
+Inheritance 
+Polymorphism
 What is API?
+API are tools(libraries) that assist programers in building application.
 Does java support multiple inheritance?
+yes and no 
+no: a class can not inherit from more than one class in java
+yes: you can have multiple inheritance using interface
 What is method overloading and when it happens?
+Method overloading is when a two method or constructor have the same name but different signature 
 What is method overriding and when it happens?
+when 2 method have the same name and same signature
 Explain exceptions in java and how to handle it.
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions
+through try and catch or specify that the methdod might throw exception
 What is static keyword in java? How it has been used in variables and methods ?
+means that the variable or function is shared between all instances of that class as it belongs to the type,
+ not the actual objects themselves. So if you have a variable: 
+ private static int i = 0; and you increment it ( i++ ) in one instance, the change will be reflected in all instances.
 What is final and how it has been used variables and methods?
+final is a keyword. The variable decleared as final should be
+	initialized only once and cannot be changed. Java classes
+	declared as final cannot be extended. Methods declared as final
+	cannot be overridden.
+	
+	
 What is final, finally and finalize?
+final is a keyword. The variable decleared as final should be
+	initialized only once and cannot be changed. Java classes
+	declared as final cannot be extended. Methods declared as final
+	cannot be overridden.
+	
+	
+	finalize is a method. Before an object is garbage collected, the
+	runtime system calls its finalize() method. You can write system
+	resources release code in finalize() method before getting garbage
+	collected.
+	
+	finally is a block. The finally block always executes when the
+	try block exits. This ensures that the finally block is executed
+	even if an unexpected exception occurs. But finally is useful for
+	more than just exception handling - it allows the programmer to
+	avoid having cleanup code accidentally bypassed by a return,
+	continue, or break. Putting cleanup code in a finally block is
+	always a good practice, even when no exceptions are anticipated.
+	
 What is a constructor ?
+A constructor is a bit of code that allows you to create objects from a class. 
+You call the constructor by using the keyword new , followed by the name of the class, followed by any necessary parameters.
 What is "this" keyword in java ?
+Within an instance method or a constructor, this is a reference to the current object — the object whose method or constructor is being called.
+You can refer to any member of the current object from within an instance method or a constructor by using this.
 What is JVM stand for ?
+java virtual machine
 What version of java are you using?
+java 8
 What is JAR stand for ?
+Java archive 
 What is compile time and run time?
+source code
 What is heap?
+is essentially a large pool of memory (typically per process) from which the running program can request chunks. 
+This is typically called dynamic allocation
 How java manage it's memory?
+java have built in garbage collection that runs from time time to recycle unused memory object

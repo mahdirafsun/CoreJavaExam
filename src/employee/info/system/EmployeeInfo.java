@@ -16,6 +16,8 @@ public class EmployeeInfo{
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+	private int sal;
+	private int benefit;
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,6 +35,18 @@ public class EmployeeInfo{
     public EmployeeInfo(String name, int employeeId){
 		
 	}
+    public void setSal(int sal) {
+		this.sal = sal;
+	}
+    public int getSal(){
+    	return sal;
+    }
+    public void setBenefit(int b){
+    	 benefit = b;
+    }
+	public int getBenefit() {
+		return benefit;
+	}
 	
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
@@ -42,8 +56,9 @@ public class EmployeeInfo{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeBonus(){
-		int total=0;
+	public static double calculateEmployeBonus(double salary, double percentage){
+		double total=0;
+		total += salary * (percentage/100);
 		return total;
 	}
 	
@@ -54,9 +69,9 @@ public class EmployeeInfo{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployePension(){
-		int total=0;
-		return total;
+	public static double calculateEmployePension(double salary, double percentage){
+		double total=0;
+		return total+= salary * percentage/100;
 	}
 	
 	/*
